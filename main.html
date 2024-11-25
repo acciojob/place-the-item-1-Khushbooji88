@@ -4,9 +4,36 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-</head>
+	<style>
+		.holder{
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0;
+			margin: 0;
+			justify-content: space-between;
+		}
+		
+		.holder div {
+              flex: 1;
+		}
 
+		.holder div:first-child {
+              background-color: green;
+		}
+		.holder div:nth-child(2) {
+              background-color: red;
+		}
+		.holder div:nth-child(3) {
+              background-color: blue;
+		}
+		
+	</style>
 <body>
+	<div class="holder">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
